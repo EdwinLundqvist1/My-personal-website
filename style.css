@@ -1,0 +1,47 @@
+:root {
+  /* Colors */
+  --bg: #0b0d12;
+  --surface: #141821;
+  --surface-2: #1b202b;
+  --border: #3d4659;
+  --border-strong: #56607a;
+  --divider: #2c3445;
+  --text: #e9ecf2;
+  --text-muted: #a3abb9;
+  --accent: #7aa2ff;
+  --hero-top: #2a3658;
+
+  /* Status tags */
+  --done: #6ee79a;    --done-bg: #10261a;    --done-border: #2f7a4b;
+  --wip: #fbb35a;     --wip-bg: #2b1d0e;     --wip-border: #8a5a1f;
+  --planned: #b9adff; --planned-bg: #1e1a33; --planned-border: #5b4fa8;
+
+  /* Fonts */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Shapes */
+  --radius: 16px;
+  --radius-small: 10px;
+  --max-width: 1160px;
+}
+
+*
+{
+    border: solid 1px black;
+}
+
+.container 
+{
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 24px;
+}

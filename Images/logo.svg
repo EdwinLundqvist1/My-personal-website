@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 40" width="270" height="40">
+  <rect x="1" y="1" width="38" height="38" rx="9" fill="#141821" stroke="#3d4659" stroke-width="1.5"/>
+  <g fill="none" stroke="#e9ecf2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 11 H18 M8 20 H16 M8 29 H18 M8 11 V29"/>
+    <path d="M22 11 V29 H28"/>
+  </g>
+  <circle cx="31.5" cy="29" r="2.2" fill="#7aa2ff"/>
+  <text x="52" y="27.5" font-family="'Space Grotesk', Inter, system-ui, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.3" fill="#e9ecf2">Edwin Lundqvist<tspan fill="#7aa2ff">.</tspan></text>
+</svg>
