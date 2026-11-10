@@ -11,7 +11,9 @@
 
   <header>
     <nav>
-      <img src="Images/logo.svg" alt="Edwin Lundqvist" class="logo">
+      <a href="index.html" class="logo-link">
+      <img src="Images/logo.svg" alt="Edwin Lundqvist - home" class="logo">
+      </a>
       <ul>
         <li><a href="projects.html">All projects</a></li>
         <li><a href="about.html">About me</a></li>
@@ -84,22 +86,87 @@
       
       <img src="Images/FuzzyFileSearch.png" alt="Screenshot of Fuzzy File Search" class="project-image" >
       </article>
-      
+
     </section>
 
-    <section>
-      <!-- The two cards: All projects / Contact me -->
+    <section class="cards">
+      <div class="container grid">
+        <a href="projects.html" class="card">
+          <h3>All Projects</h3>
+          <p>See everything I've built</p>
+          <span class="card-link">View All Projects</span>
+        </a>
+
+        <a href="contact.html" class="card">
+          <h3>Contact Me</h3>
+          <p>Get in touch with me</p>
+          <span class="card-link">View Contact Information</span>
+
+
+        </a>
+
+      </div>
     </section>
 
-    <section>
-      <h2>More of my work</h2>
-      <!-- Carousel: a list of project tiles -->
-    </section>
+<section class="more-work">
+  <div class="container">
+    <h2>More of my work</h2>
+  </div>
+
+  <div class="carousel">
+    <ul class="carousel-track">
+      <li class="carousel-tile">
+        <a href="projects.html">
+          <img src="Images/SimpleGraphCalculator.png" alt="">
+          <span>Simple Graph Calculator</span>
+        </a>
+      </li>
+      <li class="carousel-tile">
+        <a href="projects.html">
+          <img src="Images/portfolio.png" alt="">
+          <span>Portfolio website</span>
+        </a>
+      </li>
+      <li class="carousel-tile">
+        <a href="projects.html">
+          <img src="Images/file-explorer.png" alt="">
+          <span>Fuzzy file search</span>
+        </a>
+      </li>
+
+      <!-- Copies for the seamless loop -->
+      <li class="carousel-tile" aria-hidden="true">
+        <a href="projects.html" tabindex="-1">
+          <img src="Images/SimpleGraphCalculator.png" alt="">
+          <span>Simple Graph Calculator</span>
+        </a>
+      </li>
+      <li class="carousel-tile" aria-hidden="true">
+        <a href="projects.html" tabindex="-1">
+          <img src="Images/portfolio.png" alt="">
+          <span>Portfolio website</span>
+        </a>
+      </li>
+      <li class="carousel-tile" aria-hidden="true">
+        <a href="projects.html" tabindex="-1">
+          <img src="Images/file-explorer.png" alt="">
+          <span>Fast File Explorer</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
   </main>
 
   <footer>
     <p>© 2026 Edwin Lundqvist</p>
-    <!-- Social links -->
+    <div class="container">
+      <ul class="social">
+        <li><a href="https://github.com/edwinlundqvist1" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/edwin-lundqvist-70ba80247/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:edwin.lundqvist.business@gmail.com">Email</a></li>
+      </ul>
+    </div>
   </footer>
 
 </body>
