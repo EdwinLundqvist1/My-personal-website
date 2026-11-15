@@ -10,7 +10,7 @@
 <body>
 
   <header>
-    <nav>
+    <nav class="container">
       <a href="index.html" class="logo-link">
       <img src="Images/logo.svg" alt="Edwin Lundqvist - home" class="logo">
       </a>
@@ -25,12 +25,14 @@
   <main>
     <section class="hero">
         <div class="container grid">
-            <img src="Images/edwin.jpg" alt="photo of Edwin" class="hero-portrait">
             <div class="hero-text">
                 <h1>Hi, My name<br><span class="accent"> is Edwin Lundqvist.</span></h1>
                 <p>I make apps with C# using the .NET framework.</p>
-                <a href="projects.html" class="button">See All My Projects</a>
-                <a href="contact.html" class="button">Contact me</a>
+                <div class="hero-actions">
+                  <a href="projects.html" class="button">See All My Projects</a>
+                  <a href="contact.html" class="button button-secondary">Contact me</a>
+                </div>
+
             </div>
         </div>
     </section>

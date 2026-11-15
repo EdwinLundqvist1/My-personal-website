@@ -27,9 +27,164 @@
   --max-width: 1160px;
 }
 
-*
+
+/* Elements only selectors*/
+*,
+*::before,
+*::after
 {
-    border: solid 1px black;
+    outline: 1px solid red;
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+header
+{
+    border-bottom: 1px solid var(--divider);
+}
+
+
+h1
+{
+    font-family: var(--font-heading);
+    font-size: 56px;
+    line-height: 1.05;
+    margin: 0 0 16px;
+}
+
+img
+{
+    max-width: 100%;
+    display: block;
+}
+
+
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+nav ul 
+{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+nav a 
+{
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover, nav a[aria-current="page"]
+{
+    color: var(--text);
+}
+
+nav a:focus-visible
+{
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* Classes only */
+
+.logo
+{
+    display: block;
+    height: 32px;
+    width:auto;
+}
+
+.logo-link
+{
+    display: block;
+}
+
+.hero
+{
+    background: linear-gradient(to bottom, var(--hero-top),var(--bg));
+    padding: 140px 0 120px;
+}
+
+.hero-text
+{
+    grid-column: 1 / span 8;
+}
+
+.hero-text p
+{
+    font-size: 18px;
+    color: var(--text-muted);
+    margin: 0 0 30px;
+}
+
+.accent
+{
+    color: var(--accent);
+}
+
+.hero-actions
+{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button
+{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-small);
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.button:hover
+{
+    background: var(--text);
+    border-color: var(--text);
+}
+
+.button-secondary
+{
+    background: transparent;
+    color: var(--text);
+    border-color: var(--border-strong);
+}
+
+.button-secondary:hover
+{
+    background:transparent;
+    border-color: var(--text);
+}
+
+.button:focus-visible
+{
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
 }
 
 .container 
